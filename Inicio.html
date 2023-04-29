@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Loja T - TECH</title>
+
+  <style>
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+    form {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      height: 48px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 48px 10px 16px;
+      border: none;
+      border-radius: 24px;
+      box-sizing: border-box;
+      font-size: 16px;
+      outline: none;
+      color: #333;
+      background-color: #f1f1f1;
+    }
+
+    input[type="text"]:focus {
+      background-color: #fff;
+      box-shadow: 0 0 4px #d4d4d4;
+    }
+
+    button[type="submit"] {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #f8f8f8;
+    }
+
+    button[type="submit"] svg {
+      fill: #4285f4;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+	.news-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.news-item img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.news-item h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.button-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.2);
+}
+
+.button-item-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.button-item-text {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.site-balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.button-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.2);
+}
+
+.button-item-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.button-item-text {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+hr{
+ color: #999;
+ margin: 80px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logoinicial{
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  width: 500px;
+}
+
+
+ </style>
+
+  <script async src="https://cse.google.com/cse.js?cx=SEU_CÓDIGO_DO_CSE"></script>
+
+</head>
+
+<body>
+
+
+  <img class="logoinicial" src="Imagens/logoinicial.png" alt="">
+
+
+  
+
+<!--Barra de Pesquisa-->
+
+  <form action="https://www.google.com/search" method="get">
+    <input type="text" placeholder="Pesquise no TECH ou escreva um URL" name="q">
+    <button type="submit">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5 14H14.71L14.43 13.73C15.34 12.65 16 11.18 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.18 16 12.65 15.34 13.73 14.43L14 14.71V15.5L20.25 21.75L21.75 20.25L15.5 14V14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"/>
+      </svg>
+    </button>
+  </form>
+
+  <br>
+  <br>
+
+  
+<!--Noticias-->
+
+  <div class="news-container">
+
+	<div class="news-item">
+	  <img src="https://cdn.pixabay.com/photo/2018/01/13/20/19/explosion-3080734_1280.jpg" alt="News 1">
+	  <h3>Fazem cinco meses que ocorreu a Segunda Batalha do PhD</h3>
+	  <p> Hoje, cinco meses após a destruição total causada por essa batalha, lembramos dos danos irreparáveis ​​que foram causados ​​ao mundo.</p>
+	</div>
+
+	<div class="news-item">
+	  <img src="https://tm.ibxk.com.br/2017/07/04/04150330250280.jpg?ims=1200x675" alt="News 2">
+	  <h3> Diogo Teixeira comprou o YouTube</h3>
+	  <p>Diogo Teixeira entrou em contato com a Google e pagou mais de 170 bilhões de euros pela plataforma. A transação foi concluída com sucesso, tornando-se o novo proprietário do YouTube.</p>
+	</div>
+
+	<div class="news-item">
+	  <img src="https://painel.portalamazonia.com/uploads/RTEmagicC_magia-conhecimento-natural.jpg.jpg" alt="News 3">
+	  <h3> A Liga dos Heróis não tem previsão para o lançamento da magia</h3>
+	  <p>Martim Magic declarou que está enfrentando dificuldades para reencarnar a magia e, por isso, não é possível estimar uma data de lançamento no momento.</p>
+	</div>
+
+  </div>
+
+  <br>
+
+  <div class="news-container">
+
+    <div class="news-item">
+      <img src="https://img.r7.com/images/roubos-e-furtos-de-veiculos-no-brasil-11102019121054004?dimensions=660x360&resize=660x360&crop=780x426+0+58" alt="News 1">
+      <h3>Roubos mais frequentes</h3>
+      <p>Muitas pessoas estão assaltando casas e roubando pessoas em plena rua, por falta de dinheiro e, principalmente, por falta de proteção que a magia fornecia antes.</p>
+    </div>
+  
+    <div class="news-item">
+      <img src="https://conteudo.imguol.com.br/c/noticias/3e/2022/07/25/satelite-em-orbita-com-planeta-terra-ao-fundo-1658772356276_v2_900x506.jpg" alt="News 2">
+      <h3>Exploração espacial do Diogo lança novo satélite em órbita</h3>
+      <p>Diogo Teixeira faz uma parceria com a NASA para lançar um novo satélite na órbita da Terra. O satélite possui tecnologia de ponta para coletar dados e informações sobre o espaço e será usado para fins científicos e de pesquisa.</p>
+    </div>
+  
+    <div class="news-item">
+      <img src="https://ekosnegocios.com/image/posts/May2022/ziUFpKR4H9GiHCu0PUL3.jpg" alt="News 3">
+      <h3>O McDonald's investiu mais de 6,7 bilhões para abrir uma nova loja física ao ar livre em Portugal</h3>
+      <p>A empresa já possui 23 lojas no país, todas localizadas no Hotel e no Shopping do Diogo. O terreno adquirido pelo McDonald's foi especificamente destinado à construção de um novo restaurante. Ficará localizado no Wilon AirPort.</p>
+    </div>
+  
+    </div>
+
+
+<!--Sites Afixados-->
+
+<hr>
+
+    <div class="button-group">
+
+      <a href="https://www.marvel.com/" class="button-item">
+        <img src="Imagens/logomarvel.png" alt="Google" class="button-item-image">
+        <div class="button-item-text">Marvel</div>
+      </a>
+
+      <a href="https://www.ctt.pt/particulares/index" class="button-item">
+        <img src="Imagens/logoctt.png" alt="YouTube" class="button-item-image">
+        <div class="button-item-text">CTT</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logotech.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Loja T</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logowilon.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Wilon</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logodiogoteixeira.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Diogo Teixeira</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logodesportos.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Desportos</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logoreinodamagia.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Reino da Magia</div>
+      </a>
+
+    </div>
+
+    <div class="button-group">
+
+      <a href="https://www.google.com" class="button-item">
+        <img src="Imagens/logohospital.jpg" alt="Google" class="button-item-image">
+        <div class="button-item-text">HFV</div>
+      </a>
+
+      <a href="https://www.dadosmundiais.com/" class="button-item">
+        <img src="Imagens/logosecretaria.jpg" alt="YouTube" class="button-item-image">
+        <div class="button-item-text">Secretaria</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logocafe.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Café</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logoforbes.png" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Forbes</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logoalemao.png" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">PCBEP</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logohotel.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Hotel</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logoligadosherois.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Liga dos Herois</div>
+      </a>
+
+    </div>
+
+    <div class="button-group">
+
+      <a href="https://www.google.com" class="button-item">
+        <img src="Imagens/logorestaurante.jpg" alt="Google" class="button-item-image">
+        <div class="button-item-text">Restaurante</div>
+      </a>
+
+      <a href="https://www.nasa.gov/" class="button-item">
+        <img src="Imagens/logonasa.png" alt="YouTube" class="button-item-image">
+        <div class="button-item-text">Nasa</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logohaipii.jpg" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">HaiPii</div>
+      </a>
+
+      <a href="https://www.facebook.com" class="button-item">
+        <img src="Imagens/logoelonmusk.webp" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Elon Musk</div>
+      </a>
+
+      <a href="https://www.cargill.com/home" class="button-item">
+        <img src="Imagens/logocargill.avif" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Cargill</div>
+      </a>
+
+      <a href="https://www.harvard.edu/" class="button-item">
+        <img src="Imagens/logoharvard.png" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">Harvard</div>
+      </a>
+
+      <a href="https://www.mcdonalds.pt/" class="button-item">
+        <img src="Imagens/logomcdonalds.png" alt="Facebook" class="button-item-image">
+        <div class="button-item-text">McDonald's</div>
+      </a>
+
+    </div>
+
+
+<!--Faxa-->
+
+<br>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2023 Loja T - TECH</p>
+        <nav>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  
+
+</body>
+
+</html>
